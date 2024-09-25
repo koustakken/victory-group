@@ -5,6 +5,29 @@
 
 body {
   font-family: var(--font-family);
+  background: var(--background-grey);
+}
+
+.rng {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  background: #9ca5b3;
+  height: 2px;
+
+  background-image: linear-gradient(var(--brand-color), var(--brand-color));
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--brand-color);
+    cursor: pointer;
+  }
 }
 
 .btn {

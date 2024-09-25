@@ -30,6 +30,7 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
+    "jquery": "^3.7.1",
     "sass": "^1.79.3",
     "style-loader": "^4.0.0",
     "webpack-stream": "^7.0.0"

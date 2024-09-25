@@ -172,6 +172,10 @@
                     font: var(--font-text-2);
                     padding: 10px 0;
 
+                    .active {
+                      color: var(--brand-color);
+                    }
+
                     span {
                       font: var(--font-text-2);
                       font-weight: 700;
