@@ -1,5 +1,5 @@
 {
-  "name": "gulp",
+  "name": "hire-task",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "description": "",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean": "^0.4.0",

@@ -1,0 +1,31 @@
+:root {
+  // Colors
+  --color-black: #151515;
+  --color-white: #fff;
+  --color-grey: #dce1e9;
+  --color-grey-2: #9ca5b3;
+  --brand-color: #2e58db;
+  --text-primary: #151515;
+  --text-secondary: #646970;
+  --background-grey: #f3f6fb;
+  --background-blue: #e4ecf8;
+
+  // Fonts
+  --font-family: 'PT Sans';
+  --font-size-l: 36px;
+  --font-line-l: 44px;
+  --font-weight-l: 700;
+
+  --font-size-s: 14px;
+  --font-line-s: 20px;
+  --font-weight-s: 400;
+
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+
+  --font-text-3: var(--font-size-s) / var(--font-line-s) var(--font-family);
+  --font-text-2: var(--font-size-m) / var(--font-line-m) var(--font-family);
+
+  // Containers
+  --container-width: 1332px;
+}

@@ -1,1 +1,63 @@
 @import './blocks/**/*.scss';
+@import './fonts.scss';
+@import './_reset.scss';
+@import './_vars.scss';
+
+body {
+  font-family: var(--font-family);
+}
+
+.btn {
+  font: var(--font-text-3);
+  padding: 14px;
+  max-height: 48px;
+  border: 1px solid var(--color-black);
+  border-radius: 16px;
+  background: var(--color-white);
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: var(--brand-color);
+    color: var(--color-white);
+    border: 1px solid var(--brand-color);
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  background-color: #dce1e9;
+  border-radius: 20px;
+  border: 1px solid #dce1e9;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #9ca5b3;
+    top: 4px;
+    left: 4px;
+    transition: all 0.3s;
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked + .switch::after {
+  background-color: var(--brand-color);
+  left: 25px;
+}
+.checkbox:checked + .switch {
+  background-color: var(--background-blue);
+  border: 1px solid var(--brand-color);
+}

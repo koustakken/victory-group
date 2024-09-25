@@ -1,0 +1,27 @@
+.breadcrumb {
+  padding: 14px 0;
+  font: var(--font-text-3);
+  color: var(--text-secondary);
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 6px 16px;
+      cursor: pointer;
+    }
+
+    :hover {
+      color: var(--color-black);
+      text-decoration: underline;
+    }
+
+    :first-child {
+      padding-left: 0;
+    }
+
+    :last-child {
+      color: var(--color-black);
+    }
+  }
+}

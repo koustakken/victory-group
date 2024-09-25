@@ -9,8 +9,8 @@ const plumber = require('gulp-plumber')
 const notify = require('gulp-notify')
 const webpack = require('webpack-stream')
 const babel = require('gulp-babel')
-const imageMin = require('gulp-imagemin')
 const sassGlob = require('gulp-sass-glob')
+const { deepEqual } = require('assert')
 
 const plumberNotify = (title) => {
   return {
@@ -66,7 +66,7 @@ gulp.task('sass:dev', function () {
  */
 
 gulp.task('images:dev', function () {
-  return gulp.src('./src/images/**/*').pipe(gulp.dest('./build/images'))
+  return gulp.src('./src/images/**/*', { encoding: false }).pipe(gulp.dest('./build/images'))
 })
 
 /**

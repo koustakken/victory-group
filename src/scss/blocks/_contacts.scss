@@ -1,0 +1,20 @@
+.contacts {
+  color: var(--color-white);
+  background-color: var(--color-black);
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    margin: 0 auto;
+    max-width: var(--container-width);
+    .contacts__wrapper-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      .contacts__wrapper-item__text {
+        font: var(--font-text-3);
+      }
+    }
+  }
+}
