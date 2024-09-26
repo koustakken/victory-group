@@ -5,6 +5,8 @@
   .safety-wrapper {
     margin: 0 auto;
     width: var(--container-width);
+    overflow: hidden;
+
     .safety-title {
       display: flex;
       align-items: center;
@@ -41,13 +43,12 @@
 
       .safety-item__blocks {
         display: flex;
-        gap: 12px;
 
         .safety-item__blocks-item {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 312px;
+          width: 324px !important;
           background: var(--background-grey);
           border-radius: 16px;
           padding: 10px 0;
