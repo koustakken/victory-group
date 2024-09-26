@@ -16,6 +16,11 @@ const secondSwiper = new Swiper('.swiper-2', {
   loop: true,
   spaceBetween: 12,
   allowTouchMove: false,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+  },
 })
 
 const thirdSwiper = new Swiper('.swiper-3', {
@@ -23,6 +28,11 @@ const thirdSwiper = new Swiper('.swiper-3', {
   loop: true,
   spaceBetween: 12,
   allowTouchMove: false,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+  },
 })
 
 const fourthSwiper = new Swiper('.swiper-4', {
@@ -30,6 +40,11 @@ const fourthSwiper = new Swiper('.swiper-4', {
   loop: true,
   spaceBetween: 12,
   allowTouchMove: false,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+  },
 })
 
 const fifthSwiper = new Swiper('.swiper-5', {
@@ -37,6 +52,11 @@ const fifthSwiper = new Swiper('.swiper-5', {
   loop: true,
   spaceBetween: 12,
   allowTouchMove: false,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+  },
 })
 
 const sixthSwiper = new Swiper('.swiper-6', {
@@ -44,6 +64,11 @@ const sixthSwiper = new Swiper('.swiper-6', {
   loop: true,
   spaceBetween: 12,
   allowTouchMove: false,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+  },
 })
 
 const seventhSwiper = new Swiper('.swiper-7', {
@@ -51,6 +76,11 @@ const seventhSwiper = new Swiper('.swiper-7', {
   loop: true,
   spaceBetween: 12,
   allowTouchMove: false,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+  },
 })
 
 const eighthSwiper = new Swiper('.swiper-8', {
@@ -58,6 +88,11 @@ const eighthSwiper = new Swiper('.swiper-8', {
   loop: true,
   spaceBetween: 12,
   allowTouchMove: false,
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+    },
+  },
 })
 
 swiper.controller.control = [

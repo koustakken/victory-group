@@ -227,3 +227,90 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .hero-section {
+    .hero-section__wrapper {
+      width: var(--container-width-s);
+      overflow: hidden;
+
+      .hero {
+        .hero-heading {
+          flex-direction: column;
+          .hero-heading__text {
+            align-items: start;
+            flex-direction: column;
+            gap: 0;
+            h1 {
+              font-size: 28px;
+              line-height: 34px;
+            }
+          }
+        }
+
+        .hero-section__wrapper-main {
+          flex-direction: column;
+          .hero-section__wrapper-main-item {
+            img {
+              width: 100%;
+            }
+
+            .hero-section__wrapper-main-item__charts {
+              padding: 20px 16px;
+              gap: 12px;
+
+              .hero-charts {
+                flex-wrap: wrap;
+              }
+              .hero-price {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                font-size: 17px;
+                line-height: 28px;
+                .hero-price__item {
+                  font-size: 28px;
+                  line-height: 34px;
+                  flex-direction: column;
+                  align-items: start;
+                  gap: 12px;
+                }
+              }
+
+              .hero-stats {
+                .hero-stats__item {
+                  span {
+                    white-space: nowrap;
+                  }
+                  .hero-stats__item__discount {
+                    .hero-stats__item__discount-item {
+                      font-size: 14px;
+                      word-break: keep-all;
+                    }
+                  }
+                }
+              }
+
+              .hero-buttons {
+                background: var(--color-white);
+                position: fixed;
+                width: 100%;
+                z-index: 3;
+                bottom: 0;
+                left: 0;
+                padding: 12px 16px;
+                flex-direction: row-reverse;
+                display: block;
+                gap: 0;
+                align-items: start;
+                button {
+                  width: 158px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

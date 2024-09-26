@@ -115,3 +115,15 @@
     width: calc(var(--container-width) + 36px);
   }
 }
+
+@media screen and (max-width: 360px) {
+  .compare {
+    max-width: var(--container-width-s);
+    overflow: hidden;
+
+    .compare-heading {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+}

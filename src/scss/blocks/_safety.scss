@@ -57,3 +57,14 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .safety {
+    padding: 24px 16px;
+
+    .safety-wrapper {
+      width: var(--container-width-s);
+      overflow: hidden;
+    }
+  }
+}
