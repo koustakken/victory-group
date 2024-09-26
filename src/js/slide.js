@@ -17,6 +17,9 @@ const secondSwiper = new Swiper('.swiper-2', {
   spaceBetween: 12,
   allowTouchMove: false,
   breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
     360: {
       slidesPerView: 1,
     },
@@ -29,6 +32,9 @@ const thirdSwiper = new Swiper('.swiper-3', {
   spaceBetween: 12,
   allowTouchMove: false,
   breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
     360: {
       slidesPerView: 1,
     },
@@ -41,6 +47,9 @@ const fourthSwiper = new Swiper('.swiper-4', {
   spaceBetween: 12,
   allowTouchMove: false,
   breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
     360: {
       slidesPerView: 1,
     },
@@ -53,6 +62,9 @@ const fifthSwiper = new Swiper('.swiper-5', {
   spaceBetween: 12,
   allowTouchMove: false,
   breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
     360: {
       slidesPerView: 1,
     },
@@ -65,6 +77,9 @@ const sixthSwiper = new Swiper('.swiper-6', {
   spaceBetween: 12,
   allowTouchMove: false,
   breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
     360: {
       slidesPerView: 1,
     },
@@ -77,6 +92,9 @@ const seventhSwiper = new Swiper('.swiper-7', {
   spaceBetween: 12,
   allowTouchMove: false,
   breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
     360: {
       slidesPerView: 1,
     },
@@ -89,6 +107,9 @@ const eighthSwiper = new Swiper('.swiper-8', {
   spaceBetween: 12,
   allowTouchMove: false,
   breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
     360: {
       slidesPerView: 1,
     },
