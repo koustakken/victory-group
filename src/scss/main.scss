@@ -8,6 +8,44 @@ body {
   background: var(--background-grey);
 }
 
+.swiper {
+  width: calc(var(--container-width) + 36px);
+}
+
+.swiper-button-prev {
+  background-image: url('./../images/left-arrow.svg') !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  left: -18px !important;
+  top: -50px !important;
+
+  &::after {
+    display: none;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.swiper-button-next {
+  background-image: url('./../images/right-arrow.svg') !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  right: -50px !important;
+  top: -50px !important;
+
+  &::after {
+    display: none;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
 .rng {
   -webkit-appearance: none;
   appearance: none;

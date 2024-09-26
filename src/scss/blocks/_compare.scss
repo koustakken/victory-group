@@ -59,49 +59,59 @@
       }
     }
 
-    .compare-slider__item {
-      background: var(--color-white);
-      padding: 10px;
-      border-radius: 16px;
-      width: 324px;
+    .swiper-wrapper {
+      width: calc(var(--container-width) + 36px);
+      .compare-slider__item {
+        background: var(--color-white);
+        padding: 10px;
+        border-radius: 16px;
+        width: 312px !important;
 
-      .compare-slider__item-title {
-        text-wrap: wrap;
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        font: var(--font-text-2);
-        font-weight: 700;
+        transition: all 0.3s ease;
 
-        img {
-          transform: rotate(-45deg);
-          cursor: pointer;
-        }
-      }
-
-      .compare-slider__item-subtitle {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        span {
+        .compare-slider__item-title {
+          text-wrap: wrap;
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
           font: var(--font-text-2);
           font-weight: 700;
-          color: var(--brand-color);
+
+          img {
+            transform: rotate(-45deg);
+            cursor: pointer;
+          }
         }
 
-        button {
-          font: var(--font-text-3);
-          font-weight: 700;
-          color: var(--color-white);
-          outline: none;
-          border: none;
-          background: var(--brand-color);
-          padding: 6px 16px;
-          border-radius: 16px;
-          height: 32px;
-          cursor: pointer;
+        .compare-slider__item-subtitle {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span {
+            font: var(--font-text-2);
+            font-weight: 700;
+            color: var(--brand-color);
+          }
+
+          button {
+            font: var(--font-text-3);
+            font-weight: 700;
+            color: var(--color-white);
+            outline: none;
+            border: none;
+            background: var(--brand-color);
+            padding: 6px 16px;
+            border-radius: 16px;
+            height: 32px;
+            cursor: pointer;
+          }
         }
       }
     }
+  }
+
+  .compare-nav {
+    position: relative;
+    width: calc(var(--container-width) + 36px);
   }
 }
