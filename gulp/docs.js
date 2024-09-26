@@ -17,6 +17,7 @@ const htmlClean = require('gulp-htmlclean')
 const webp = require('gulp-webp')
 const webpCss = require('gulp-webp-css')
 const webpHtml = require('gulp-webp-html')
+const { decode } = require('punycode')
 
 const plumberNotify = (title) => {
   return {
@@ -59,16 +60,18 @@ gulp.task('html:docs', function () {
  */
 
 gulp.task('sass:docs', function () {
-  return gulp
-    .src('./src/scss/*.scss')
-    .pipe(plumber(plumberNotify('SASS')))
-    .pipe(autoprefixer())
-    .pipe(sassGlob())
-    .pipe(webpCss())
-    .pipe(sass())
-    .pipe(groupMedia())
-    .pipe(csso())
-    .pipe(gulp.dest('./docs/css'))
+  return (
+    gulp
+      .src('./src/scss/*.scss')
+      .pipe(plumber(plumberNotify('SASS')))
+      .pipe(autoprefixer())
+      .pipe(sassGlob())
+      // .pipe(webpCss())
+      .pipe(sass())
+      .pipe(groupMedia())
+      .pipe(csso())
+      .pipe(gulp.dest('./docs/css'))
+  )
 })
 
 /**
@@ -77,7 +80,7 @@ gulp.task('sass:docs', function () {
 
 gulp.task('images:docs', function () {
   return gulp
-    .src('./src/images/**/*')
+    .src('./src/images/**/*', { encoding: false })
     .pipe(webp())
     .pipe(gulp.dest('./docs/images'))
     .pipe(gulp.src('./src/images/**/*'))
