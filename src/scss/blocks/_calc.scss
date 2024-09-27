@@ -12,15 +12,14 @@
   margin-top: 40px;
 
   h2 {
-    font-size: 36px;
-    line-height: 44px;
+    font: var(--font-text-1);
     font-weight: 700;
   }
 
   .calc-wrapper {
     background: var(--background-grey);
     padding: 42px 40px;
-    border-radius: 16px;
+    border-radius: var(--brr);
     display: flex;
     gap: 40px;
 
@@ -40,8 +39,8 @@
 
         span {
           color: var(--brand-color);
-          font-size: 20px;
-          line-height: 28px;
+          font: var(--font-text-5);
+          font-weight: 700;
         }
       }
 
@@ -86,10 +85,9 @@
       &:last-child {
         background: var(--color-white);
         padding: 20px 24px;
-        border-radius: 16px;
+        border-radius: var(--brr);
 
-        font-size: 20px;
-        line-height: 28px;
+        font: var(--font-text-5);
         font-weight: 700;
         color: var(--black-color);
         text-align: center;
@@ -101,8 +99,7 @@
           gap: 90px;
           font: var(--font-text-2);
           span {
-            font-size: 24px;
-            line-height: 32px;
+            font: var(--font-text-4);
             font-weight: 700;
             color: var(--brand-color);
           }
@@ -147,8 +144,8 @@
     text-align: center;
     padding: 40px 0;
     h2 {
-      font-size: 28px;
-      line-height: 34px;
+      font: var(--font-text-6);
+      font-weight: 700;
     }
     .calc-wrapper {
       width: var(--container-width-s);
@@ -177,8 +174,7 @@
           .calc-wrapper__item-info {
             align-items: start;
             padding: 10px 14px;
-            font-size: 14px;
-            line-height: 20px;
+            font: var(--font-text-3);
           }
 
           .calc-wrapper__item-buttons {

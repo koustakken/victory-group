@@ -72,7 +72,7 @@ body {
   font: var(--font-text-3);
   padding: 14px;
   max-height: 48px;
-  border-radius: 16px;
+  border-radius: var(--brr);
   font-weight: 700;
   width: 100%;
   cursor: pointer;

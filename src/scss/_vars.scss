@@ -12,7 +12,15 @@
   --font-family: 'PT Sans';
   --font-size-l: 36px;
   --font-line-l: 44px;
-  --font-weight-l: 700;
+
+  --font-size-ml: 28px;
+  --font-line-ml: 34px;
+
+  --font-size-md: 24px;
+  --font-line-md: 32px;
+
+  --font-size-sm: 20px;
+  --font-line-sm: 28px;
 
   --font-size-s: 14px;
   --font-line-s: 20px;
@@ -21,9 +29,15 @@
   --font-size-m: 16px;
   --font-line-m: 24px;
 
+  --font-text-6: var(--font-size-ml) / var(--font-line-ml) var(--font-family);
+  --font-text-5: var(--font-size-sm) / var(--font-line-sm) var(--font-family);
+  --font-text-4: var(--font-size-md) / var(--font-line-md) var(--font-family);
   --font-text-3: var(--font-size-s) / var(--font-line-s) var(--font-family);
   --font-text-2: var(--font-size-m) / var(--font-line-m) var(--font-family);
+  --font-text-1: var(--font-size-l) / var(--font-line-l) var(--font-family);
 
   --container-width: 1332px;
   --container-width-s: 328px;
+
+  --brr: 16px;
 }

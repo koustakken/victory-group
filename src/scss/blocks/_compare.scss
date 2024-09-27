@@ -11,15 +11,13 @@
   .compare-heading {
     display: flex;
     h2 {
-      font-size: 36px;
-      line-height: 44px;
+      font: var(--font-text-1);
       font-weight: 700;
       color: var(--color-black);
     }
 
     span {
-      font-size: 36px;
-      line-height: 44px;
+      font: var(--font-text-1);
       font-weight: 700;
       color: var(--text-secondary);
     }
@@ -64,7 +62,7 @@
       .compare-slider__item {
         background: var(--color-white);
         padding: 10px;
-        border-radius: 16px;
+        border-radius: var(--brr);
         width: 306px !important;
 
         transition: all 0.3s ease;
@@ -101,7 +99,7 @@
             border: none;
             background: var(--brand-color);
             padding: 6px 16px;
-            border-radius: 16px;
+            border-radius: var(--brr);
             height: 32px;
             cursor: pointer;
           }
